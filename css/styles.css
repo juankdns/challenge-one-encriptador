@@ -184,9 +184,6 @@ button:active {
     .encriptar,
     .desencriptar {
         width: 46%;
-        padding: 2rem 0;
-        border-radius: 2rem;
-        cursor: pointer;
     }
 
     .contenedor-principal {

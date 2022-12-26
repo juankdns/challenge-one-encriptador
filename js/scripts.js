@@ -40,6 +40,13 @@ function copiar() {
         }));
 }
 
+
+function modificarElemento() {
+    ocultar.style.display = "none";
+    mostrar.style.display = "flex";
+    texto.value = "";
+}
+
 botones.forEach((btn) => {
     btn.addEventListener("click", e => {
         let letrasMinusculas = /^(\s*[a-z]\s*)+$/;
@@ -48,14 +55,10 @@ botones.forEach((btn) => {
         } else if (letrasMinusculas.exec(texto.value)) {
             if (e.target.id == "encriptar") {
                 encriptarTexto(texto.value);
-                ocultar.style.display = "none";
-                mostrar.style.display = "flex";
-                texto.value = "Ingrese el texto aquí";
+                modificarElemento();
             } else if (e.target.id == "desencriptar") {
                 desencriptarTexto(texto.value);
-                ocultar.style.display = "none";
-                mostrar.style.display = "flex";
-                texto.value = "Ingrese el texto aquí";
+                modificarElemento();
             }
         } else {
             swal({
