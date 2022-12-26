@@ -1,0 +1,241 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    background-color: #F3F5FC;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    text-align: right;
+    align-items: center;
+}
+
+button {
+    width: 95%;
+    padding: 2rem 0;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+button:active {
+    box-shadow: 2px 2px 2px #000;
+}
+
+.logo {
+    margin: 2rem 0;
+}
+
+.contenedor-principal {
+    max-width: 78rem;
+    width: 95%;
+}
+
+.contenedor {
+    padding-left: 4rem;
+}
+
+.texto {
+    resize: none;
+    font-size: 3.2rem;
+    color: #0A3871;
+    background-color: #F3F5FC;
+    border: none;
+    outline: none;
+    width: 95%;
+    height: 45rem;
+}
+
+.advertencia {
+    display: flex;
+    gap: .5rem;
+}
+
+.texto-advertencia {
+    font-size: 1.2rem;
+    color: #495057;
+}
+
+.encriptar {
+    margin-bottom: 2rem;
+    border: none;
+    background-color: #0A3871;
+    color: #FFFFFF;
+}
+
+.encriptar:hover {
+    color: #000000;
+}
+
+.desencriptar {
+    background-color: #F3F5FC;
+    color: #0A3871;
+    border-color: #0A3871;
+    border-width: 0.1rem;
+}
+
+.desencriptar:hover {
+    color: #000000;
+}
+
+.contenedor-sidebar {
+    padding-top: 2rem;
+    padding-left: 4rem;
+}
+
+.sidebar {
+    width: 95%;
+    background-color: #FFFFFF;
+    box-shadow: 0rem 2.4rem 3.2rem -.8rem rgba(0, 0, 0, 0.08);
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+.contenedor2 {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 1rem;
+}
+
+.muneca {
+    display: none;
+}
+
+.muneca-texto1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.muneca-texto2 {
+    font-size: 1.6rem;
+}
+
+.contenedor3 {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.resultado {
+    margin: 0 auto;
+    font-size: 2rem;
+    color: #495057;
+    margin-bottom: 3rem;
+    display: inline-block;
+    word-break: normal;
+    overflow-wrap: anywhere;
+}
+
+.copiar {
+    margin: 0 auto;
+    border-width: 0.1rem;
+    background-color: #FFFFFF;
+    width: 85%;
+}
+
+.copiar:hover {
+    color: #0A3871;
+}
+
+.footer {
+    text-align: center;
+    background-color: #0A3871;
+    color: #FFFFFF;
+    padding: 2rem 0;
+    margin-top: 1rem;
+}
+
+.nombre {
+    font-weight: bold;
+}
+
+.footer i {
+    color: #FFFFFF;
+    font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    .encriptar,
+    .desencriptar {
+        width: 46%;
+        padding: 2rem 0;
+        border-radius: 2rem;
+        cursor: pointer;
+    }
+
+    .contenedor-principal {
+        max-width: 150rem;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .encriptar {
+        margin-right: 2rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .columnas {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .contenedor {
+        padding-left: 12rem;
+    }
+
+    .sidebar {
+        height: 65rem;
+    }
+
+    .contenedor2 {
+        padding-top: 10rem;
+    }
+
+    .contenedor-sidebar {
+        padding: 2rem;
+    }
+
+    .muneca {
+        display: block;
+    }
+
+    .resultado {
+        width: 87%;
+        overflow-y: auto;
+    }
+}
+
+@media (min-height: 900px) {
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}

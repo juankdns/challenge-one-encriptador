@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de Texto</title>
+    <link rel="icon" href="./img/Favicon.svg" />
+    <script
+      src="https://kit.fontawesome.com/ffcb348699.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="preload" href="./css/normalize.css" as="style" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="./css/styles.css" as="style" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <div class="contenedor-principal columnas">
+      <div class="contenido-agrupado">
+        <header>
+          <img class="logo" src="./img/Logo.svg" alt="Logo de Alura" />
+          <h1>Encriptador de Texto</h1>
+        </header>
+        <div class="contenedor">
+          <main>
+            <textarea class="texto" autofocus>
+Ingrese el texto aqu&iacute;</textarea
+            >
+            <div class="advertencia">
+              <img
+                src="./img/ExclamationCircleFill.svg"
+                alt="Signo de exclamación dentro de un círculo"
+              />
+              <p class="texto-advertencia">
+                Solo letras minúsculas y sin acentos ni caracteres especiales
+              </p>
+            </div>
+            <div>
+              <button id="encriptar" class="encriptar boton" type="button">
+                <i class="fa-solid fa-lock"></i>
+                Encriptar
+              </button>
+              <button
+                id="desencriptar"
+                class="desencriptar boton"
+                type="button"
+              >
+                <i class="fa-solid fa-lock-open"></i>
+                Desencriptar
+              </button>
+            </div>
+          </main>
+        </div>
+      </div>
+      <div class="contenedor-sidebar">
+        <aside class="sidebar">
+          <div class="contenedor2">
+            <img
+              class="muneca"
+              src="./img/Muneco.svg"
+              alt="Mujer con una lupa"
+            />
+            <p class="muneca-texto1">Ningún mensaje fue encontrado</p>
+            <p class="muneca-texto2">
+              Ingresa el texto que desees encriptar o desencriptar.
+            </p>
+          </div>
+          <div class="contenedor3">
+            <span class="resultado"></span>
+            <button id="copiar" class="copiar boton" type="button">
+              <i class="fa-regular fa-copy"></i>
+              Copiar
+            </button>
+          </div>
+        </aside>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>
+        &copy; <span class="nombre">Juan Camilo Espinosa Morales</span> Todos
+        los derechos reservados.
+      </p>
+      <a href="https://github.com/juankdns" target="_blank"
+        ><i class="fa-brands fa-github"></i
+      ></a>
+      <a href="https://www.linkedin.com/in/juancamiloespinosa" target="_blank"
+        ><i class="fa-brands fa-linkedin"></i
+      ></a>
+    </footer>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
